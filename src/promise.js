@@ -10,7 +10,6 @@
 // mePromise.then( (res) => {
 //     res += 3;
 //     console.log(res);
-    
 // })
 
 function getData(method, url){
