@@ -4,7 +4,6 @@
 // ex : reverseString('hello') === 'olleh'
 
 function reverseString( str ){
-    console.log("hello world");
     
     //method 1 using predefined methods
     // return str.split('')
@@ -45,6 +44,8 @@ function reverseString( str ){
     // }, '');
 
 }
+// let reverseStringOp = reverseString('HelloWorld');
+// console.log(reverseStringOp);
 
 
 
@@ -53,13 +54,11 @@ function reverseString( str ){
 
 function isPalindrome( str ){
     let revString = str.split('').reverse().join('');
-    
     if( str = revString){
         console.log('palindrome');
     }else{
         console.log('not a palindrome');
     }
-    
     return revString === str;
 }
 
@@ -139,3 +138,23 @@ function maxCharacter( str ){
 // write a program that prints all the numbers from 1 to 100. 
 // for multiples of 3 print fizz, for multiples of 5 print buzz. for multiple of
 // both 3 and 5 print fizzbuzz
+
+function fizzbuzz(){
+
+    for( let i=0; i<=100; i++){
+        if( i%3 == 0 && i%5 == 0){
+            console.log('fizzbuzz');
+        } else if( i% 3 == 0){
+            console.log('fizz');
+        } else if( i%5 == 0) {
+            console.log('buzz');
+        } else {
+            console.log(i);
+            
+        }
+
+    }
+}
+
+fizzbuzz();
+
