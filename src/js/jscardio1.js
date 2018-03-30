@@ -1,16 +1,22 @@
+function test(){
+    console.log('Hai this is test from js');
+    
+}
 
 // challenge 1 : Reverse a string
 // Return a string in reverse 
 // ex : reverseString('hello') === 'olleh'
 
-function reverseString( str ){
+function reverse( str ){
     
     //method 1 using predefined methods
-    // return str.split('')
-    //  .reverse()
-    //  .join('');
-
-    // method 2 - using negative decrement
+    let reversed = str.split('')
+     .reverse()
+     .join('');
+     document.getElementById("demo").innerHTML = reversed;
+    
+     return reversed;
+     // method 2 - using negative decrement
     // let revString = '';
     // for(let i = str.length-1 ; i >= 0; i--){
     //     revString = revString +  str[i]; 
@@ -44,7 +50,7 @@ function reverseString( str ){
     // }, '');
 
 }
-// let reverseStringOp = reverseString('HelloWorld');
+// // let reverseStringOp = reverse('HelloWorld');
 // console.log(reverseStringOp);
 
 
@@ -156,5 +162,5 @@ function fizzbuzz(){
     }
 }
 
-fizzbuzz();
+// fizzbuzz();
 
